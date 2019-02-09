@@ -29,6 +29,26 @@ body {
   width: 100px;
 }
 
+#crys_1 {
+  background-image: url("../images/crystal_1.jpg");
+  background-size: contain;
+}
+
+#crys_2 {
+  background-image: url("../images/crystal_2.jpg");
+  background-size: contain;
+}
+
+#crys_3 {
+  background-image: url("../images/crystal_3.jpg");
+  background-size: contain;
+}
+
+#crys_4 {
+  background-image: url("../images/crystal_4.jpg");
+  background-size: contain;
+}
+
 .row {
   display: flex;
 }

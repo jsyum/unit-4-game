@@ -22,11 +22,6 @@ function win() {
     wins++;
     showWins();
     resetVariables();
-    $("#currentScore").text("");
-    $("crys_1").html(crys1);
-    $("crys_2").html(crys2);
-    $("crys_3").html(crys3);
-    $("crys_4").html(crys4);
   }
 }
 
@@ -35,11 +30,6 @@ function lose() {
     losses++;
     showLosses();
     resetVariables();
-    $("#currentScore").text("");
-    $("crys_1").html(crys1);
-    $("crys_2").html(crys2);
-    $("crys_3").html(crys3);
-    $("crys_4").html(crys4);
   }
 }
 
@@ -93,6 +83,7 @@ function resetVariables() {
 
   randChoice = Math.floor(Math.random() * 102 + 19);
   $("#computerChoice").text(randChoice);
+  console.log(randChoice);
 
   crys1 = Math.floor(Math.random() * 12) + 1;
   console.log(crys1);
@@ -102,4 +93,10 @@ function resetVariables() {
   console.log(crys3);
   crys4 = Math.floor(Math.random() * 12) + 1;
   console.log(crys4);
+
+  $("#currentScore").text("");
+  $("crys_1").html(crys1);
+  $("crys_2").html(crys2);
+  $("crys_3").html(crys3);
+  $("crys_4").html(crys4);
 }
