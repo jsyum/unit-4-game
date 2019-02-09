@@ -21,6 +21,8 @@ function win() {
   if (currentScore === randChoice) {
     wins++;
     showWins();
+    resetVariables();
+    $("#currentScore").text("");
   }
 }
 
@@ -28,6 +30,8 @@ function lose() {
   if (currentScore > randChoice) {
     losses++;
     showLosses();
+    resetVariables();
+    $("#currentScore").text("");
   }
 }
 
@@ -73,4 +77,21 @@ function showWins() {
 //function to show losses
 function showLosses() {
   document.getElementById("numLosses").innerHTML = losses;
+}
+
+//function RESET
+function resetVariables() {
+  currentScore = 0;
+
+  randChoice = Math.floor(Math.random() * 102 + 19);
+  $("#computerChoice").text(randChoice);
+
+  var crys1 = Math.floor(Math.random() * 12) + 1;
+  console.log(crys1);
+  var crys2 = Math.floor(Math.random() * 12) + 1;
+  console.log(crys2);
+  var crys3 = Math.floor(Math.random() * 12) + 1;
+  console.log(crys3);
+  var crys4 = Math.floor(Math.random() * 12) + 1;
+  console.log(crys4);
 }
