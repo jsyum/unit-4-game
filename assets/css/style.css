@@ -1,0 +1,39 @@
+body {
+  background-color: #f1f1f2;
+}
+
+#instructions {
+  background-color: #a1d6e2;
+  width: 50%;
+  padding: 5px;
+  padding-top: 0px;
+}
+
+#computerChoice {
+  background-color: #1995ad;
+  width: 20%;
+  height: 100%;
+  color: whitesmoke;
+  font-size: 30px;
+  padding: 5px;
+}
+
+#winsLosses {
+  background-color: #1995ad;
+  width: 20%;
+  height: 100%;
+  padding: 2px;
+}
+
+.row {
+  display: flex;
+}
+#crystalsdiv {
+  width: 50%;
+  display: flex;
+}
+
+.column {
+  flex: 25%;
+  padding: 5px;
+}

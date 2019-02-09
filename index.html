@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Crystals Collector Game</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/javascript/game.js"></script>
+  </head>
+  <body>
+    <h1>Crystals Collector Game</h1>
+    <!-- Instructions div -->
+    <div id="instructions">
+      <h2>How to Play</h2>
+      <p>You will be given a random number at the start of the game.</p>
+      <p>
+        There are four crystals below. By clicking on a crystal you will add a
+        specific amount of points to your total score.
+      </p>
+      <p>
+        You win the game by matching your total score to random number; you lose
+        the game if your total score goes above the random number.
+      </p>
+      <p>The value of each crystal is hidden from you until you click on it.</p>
+      <p>
+        Each time the game starts, the game will change the values of each
+        crystal.
+      </p>
+    </div>
+    <!--Row defined for computer choice box and wins and losses box-->
+    <div id=doubleBox class="row">
+<!--Computer generated number-->
+    <div id="computerChoice" class="col">X</div>
+    <!--Wins and losses container-->
+    <div id="winsLosses" class="col">
+      <p>Wins: <div id="numWins"></div></p>
+      <p>Losses: <div id="numLosses"></div></p>
+    </div>
+</div>
+    <!--Crystals div-->
+    <div id="crystalsdiv" class="row">
+      <div class="column">
+        <img
+          id="crystal_1"
+          src="assets/images/crystal_1.jpg"
+          alt="crystal_1"
+          style="width:100%"
+        />
+      </div>
+      <div class="column">
+        <img
+          id="crystal_2"
+          src="assets/images/crystal_2.jpg"
+          alt="crystal_2"
+          style="width:100%"
+        />
+      </div>
+      <div class="column">
+        <img
+          id="crystal_3"
+          src="assets/images/crystal_3.jpg"
+          alt="crystal_3"
+          style="width:100%"
+        />
+      </div>
+      <div class="column">
+        <img
+          id="crystal_4"
+          src="assets/images/crystal_4.jpg"
+          alt="crystal_4"
+          style="width:100%"
+        />
+      </div>
+    </div>
+  </body>
+</html>
