@@ -2,8 +2,8 @@
 var losses = 0;
 var wins = 0;
 //value assigned to computer choice
-var computerChoice = Math.floor(Math.random() * 102 + 19);
-console.log(computerChoice);
+var randChoice = Math.floor(Math.random() * 102 + 19);
+console.log(randChoice);
 
 //values assigned to crystals 1-4
 var crys1 = Math.floor(Math.random() * 12) + 1;
@@ -19,6 +19,11 @@ console.log(crys4);
 //   var number = Math.floor(Math.random() * 12) + 1;
 //   $(this).addClass(number.toString());
 // });
+
+//function to show computer choice
+function showChoice() {
+  document.getElementById("computerChoice").innerHTML = randChoice;
+}
 
 //function to show wins
 function showWins() {
