@@ -37,3 +37,13 @@ body {
   flex: 25%;
   padding: 5px;
 }
+
+#playerScore {
+  background-color: #a1d6e2;
+  width: 30%;
+  height: 100px;
+}
+
+#currentScore {
+  font-size: 68px;
+}
