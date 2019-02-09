@@ -15,15 +15,18 @@ console.log(crys3);
 var crys4 = Math.floor(Math.random() * 12) + 1;
 console.log(crys4);
 
-// $("crystal_1").each(function() {
-//   var number = Math.floor(Math.random() * 12) + 1;
-//   $(this).addClass(number.toString());
-// });
-
-//function to show computer choice
-function showChoice() {
+// function to show computer choice
+window.onload = function(showChoice) {
   document.getElementById("computerChoice").innerHTML = randChoice;
-}
+};
+
+// function showChoice() {
+//   document.getElementById("computerChoice").innerHTML = randChoice;
+// }
+// showChoice();
+// var resetAndStart = function() {
+//   $("#computerChoice").html(randChoice);
+// };
 
 //function to show wins
 function showWins() {
