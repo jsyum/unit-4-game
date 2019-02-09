@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Crystals Collector Game</title>
     <link rel="stylesheet" href="assets/css/style.css" />
-    <script src="assets/javascript/game.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js
+    "></script>
   </head>
   <body>
     <h1>Crystals Collector Game</h1>
@@ -39,44 +41,17 @@
     </div>
 </div>
     <!--Crystals div-->
-    <div id="crystalsdiv" class="row">
-      <div class="column">
-        <img
-          id="crystal_1"
-          src="assets/images/crystal_1.jpg"
-          alt="crystal_1"
-          style="width:100%"
-        />
-      </div>
-      <div class="column">
-        <img
-          id="crystal_2"
-          src="assets/images/crystal_2.jpg"
-          alt="crystal_2"
-          style="width:100%"
-        />
-      </div>
-      <div class="column">
-        <img
-          id="crystal_3"
-          src="assets/images/crystal_3.jpg"
-          alt="crystal_3"
-          style="width:100%"
-        />
-      </div>
-      <div class="column">
-        <img
-          id="crystal_4"
-          src="assets/images/crystal_4.jpg"
-          alt="crystal_4"
-          style="width:100%"
-        />
-      </div>
-    </div>
+   <div id="crystals">
+      <button class="btn" id="crys_1"></button>
+      <button class="btn" id="crys_2"></button>
+      <button class="btn" id="crys_3"></button>
+      <button class="btn" id="crys_4"></button>
+   </div>
     <!--USER SCORE DIV-->
 
 <div id=playerScore>
-    Your current score is: <div id=currentScore>X</div>
+    Your current score is: <div id=currentScore></div>
 </div>
+<script src="assets/javascript/game.js"></script>
   </body>
 </html>
