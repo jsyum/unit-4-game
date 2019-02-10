@@ -73,4 +73,19 @@ body {
     height: 85px;
     width: 85px;
   }
+
+  #computerChoice {
+    background-color: #bcbabe;
+    width: 30%;
+    color: whitesmoke;
+    padding: 5px;
+    font-size: 60px;
+  }
+
+  #winsLosses {
+    background-color: #1995ad;
+    width: 40%;
+    height: 100%;
+    padding: 2px;
+  }
 }

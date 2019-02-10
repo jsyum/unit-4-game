@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Crystals Collector Game</title>
     <link rel="stylesheet" href="assets/css/style.css" />
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js
     "></script>
   </head>
@@ -31,27 +31,28 @@
       </p>
     </div>
     <!--Row defined for computer choice box and wins and losses box-->
-    <div id=doubleBox class="row">
-    <!--Computer generated number-->
-    <div id="computerChoice" class="col"></div>
-    <!--Wins and losses container-->
-    <div id="winsLosses" class="col">
-      <p>Wins: <div id="numWins"></div></p>
-      <p>Losses: <div id="numLosses"></div></p>
+    <div id="doubleBox" class="row">
+      <!--Computer generated number-->
+      <div id="computerChoice" class="col"></div>
+      <!--Wins and losses container-->
+      <div id="winsLosses" class="col">
+        <p>Wins: <span id="numWins"></span></p>
+        <p>Losses: <span id="numLosses"></span></p>
+      </div>
     </div>
-</div>
     <!--Crystals div-->
-   <div id="crystals">
+    <div id="crystals">
       <button class="btn" id="crys_1"></button>
       <button class="btn" id="crys_2"></button>
       <button class="btn" id="crys_3"></button>
       <button class="btn" id="crys_4"></button>
-   </div>
+    </div>
     <!--USER SCORE DIV-->
 
-<div id=playerScore>
-    Your current score is: <div id=currentScore></div>
-</div>
-<script src="assets/javascript/game.js"></script>
+    <div id="playerScore">
+      Your current score is:
+      <div id="currentScore"></div>
+    </div>
+    <script src="assets/javascript/game.js"></script>
   </body>
 </html>

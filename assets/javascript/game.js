@@ -16,7 +16,7 @@ console.log(crys3);
 var crys4 = Math.floor(Math.random() * 12) + 1;
 console.log(crys4);
 
-// Function for win conditions
+// Function for win and lose conditions
 function win() {
   if (currentScore === randChoice) {
     wins++;
